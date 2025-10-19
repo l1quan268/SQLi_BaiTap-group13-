@@ -34,7 +34,7 @@ Các bước giải:
 - Kiểm tra có bảng users hay không:
   - TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a
   - Nếu "Welcome back" xuất hiện → tồn tại bảng users.
-  - ![A screenshot of a computer](./image/Picture5.png)
+- ![A screenshot of a computer](./image/Picture5.png)
 - Kiểm tra có user administrator:
   - TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator')='a
   - Nếu "Welcome back" xuất hiện → tồn tại user administrator.
@@ -99,7 +99,7 @@ Các bước giải:
 - Mở My account → Login.
 - Dùng username = administrator và mật khẩu vừa rút trích được để đăng nhập.
 - Sau khi đăng nhập thành công, lab sẽ được hoàn thành.
-- - ![A screenshot of a computer](./image/Picture31.png)
-    Kết luận:
+- ![A screenshot of a computer](./image/Picture31.png)
+  Kết luận:
 - Kỹ thuật boolean-based blind SQLi dùng sự khác biệt trong phản hồi (ở đây là "Welcome back") để suy ra dữ liệu bên trong DB.
 - Bằng cách kiểm tra độ dài rồi từng ký tự (với Intruder), ta rút trích được mật khẩu administrator và đăng nhập để hoàn thành lab.
