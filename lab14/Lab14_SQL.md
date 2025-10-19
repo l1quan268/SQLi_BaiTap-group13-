@@ -8,14 +8,6 @@ Tóm tắt:
 - Ứng dụng không trả dữ liệu trực tiếp và không khác biệt nội dung khi truy vấn trả về hàng hay không.
 - Vì truy vấn chạy đồng bộ, ta có thể buộc DB "sleep" để suy luận TRUE/FALSE dựa trên thời gian phản hồi.
 
-Yêu cầu:
-
-- Burp Suite (Intercept, Repeater).
-- Trình duyệt cấu hình proxy (hoặc Burp built-in browser).
-- 6 ảnh minh họa để chèn vào báo cáo (đã đặt placeholders bên dưới).
-
-Hướng dẫn chi tiết (có chỗ chèn ảnh — đúng 6 vị trí)
-
 -Bước 1 — Bắt request ban đầu với TrackingId
 
 - Sử dụng Burp Suite (Proxy hoặc Repeater), ta bắt được request gốc gửi đến trang lab.
